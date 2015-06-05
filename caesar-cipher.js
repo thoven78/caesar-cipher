@@ -11,7 +11,7 @@ export default class CaesarCipher {
         result += ' ';
       }
 
-  		if (char >= 65 && char <=  90) {
+      if (char >= 65 && char <=  90) {
         result += String.fromCharCode((char - 65 + shift) % 26 + 65);  // Uppercase
       } else if (char >= 97 && char <= 122) {
         result += String.fromCharCode((char - 97 + shift) % 26 + 97);  // Lowercase
