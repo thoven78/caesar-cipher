@@ -9,18 +9,24 @@ For example, the letter E is the most commonly used letter in the English langua
 
 The transformation can be represented by aligning two alphabets; the cipher alphabet is the plain alphabet rotated left or right by some number of positions. For instance, here is a Caesar cipher using a left rotation of three places, equivalent to a right shift of 23 (the shift parameter is used as the key):
 
-`Plain:    ABCDEFGHIJKLMNOPQRSTUVWXYZ
-Cipher:   DEFGHIJKLMNOPQRSTUVWXYZABC`
+``Plain:    ABCDEFGHIJKLMNOPQRSTUVWXYZ``
+
+``Cipher:   DEFGHIJKLMNOPQRSTUVWXYZABC``
+
 When encrypting, a person looks up each letter of the message in the "plain" line and writes down the corresponding letter in the "cipher" line. Deciphering is done in reverse, with a right shift of 3.
 
-`Ciphertext: WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ
-Plaintext:  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG`
+``Ciphertext: WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ``
+
+``Plaintext:  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG``
+
 The encryption can also be represented using modular arithmetic by first transforming the letters into numbers, according to the scheme, A = 0, B = 1,..., Z = 25.[1] Encryption of a letter x by a shift n can be described mathematically as,[2]
 
-`E_n(x) = (x + n) \mod {26}.
-Decryption is performed similarly,`
+``E_n(x) = (x + n) \mod {26}.``
 
-`D_n(x) = (x - n) \mod {26}.
+``Decryption is performed similarly,```
+
+``D_n(x) = (x - n) \mod {26}.``
+
 (There are different definitions for the modulo operation. In the above, the result is in the range 0...25. I.e., if x+n or x-n are not in the range 0...25, we have to subtract or add 26.)`
 
 The replacement remains the same throughout the message, so the cipher is classed as a type of monoalphabetic substitution, as opposed to polyalphabetic substitution.
