@@ -1,11 +1,16 @@
-export default class CaesarCipher {
+'use strict';
 
-  encrypt(text, shift = 10) {
+class CaesarCipher {
+
+  encrypt(text, shift) {
+
+    shift = (shift || 10);
+
     let result = '';
 
-    for (let i = 0; i < s.length; i++) {
+    for (let i = 0; i < text.length; i++) {
 
-      let char = s.charCodeAt(i);
+      let char = text.charCodeAt(i);
 
       if (char === 32) { // spaces
         result += ' ';
@@ -21,7 +26,10 @@ export default class CaesarCipher {
     return result;
   }
 
-  decrypt(text, shift = 10) {
-    return encrypt((26 - shift) % 26);
+  decrypt(text, shift) {
+    shift = (shift || 10);
+    return this.encrypt(text, (26 - shift) % 26);
   }
 }
+
+module.exports = CaesarCipher;
