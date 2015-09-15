@@ -1,5 +1,7 @@
 # Caesar Cipher
 
+[![Build Status](https://travis-ci.org/thoven78/caesar-cipher.svg?branch=master)](https://travis-ci.org/thoven78/caesar-cipher)
+
 A Caesar cipher is one of the simplest (and easiest cracked) encryption methods.
 It is a Substitution Cipher that involves replacing each letter of the secret message with a different letter of the alphabet which is a fixed number of positions further in the alphabet.  
 
