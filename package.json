@@ -1,0 +1,24 @@
+{
+  "name": "caesar-cipher",
+  "version": "1.0.0",
+  "description": "'A Caesar cipher is one of the simplest (and easiest cracked) encryption methods'",
+  "main": "caesar-cipher.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thoven78/caesar-cipher.git"
+  },
+  "keywords": [
+    "Cipher",
+    "easy",
+    "ecryption"
+  ],
+  "author": "Stevenson Michel <thoven87@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thoven78/caesar-cipher/issues"
+  },
+  "homepage": "https://github.com/thoven78/caesar-cipher#readme"
+}
